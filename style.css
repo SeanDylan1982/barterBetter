@@ -10,19 +10,28 @@ header {
   width: 100vw;
   height: 50px;
   background-color: #182455;
+  color: #f1f1f1;
+  text-decoration: none;
   z-index: 2;
 }
 
-header #login {
+header #login a {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
   margin: 0;
-  width: 220px;
-  height: 50px;
+  font-size: 1.5rem;
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
   background-color: #3d58c4;
   color: #f1f1f1;
   border-radius: 10px;
+}
+
+header #login a:hover {
+  background-color: #f1f1f1;
+  color: #3d58c4;
 }
 
 header input {
@@ -177,21 +186,31 @@ footer {
 
 footer #back-to-top {
   position: fixed;
-  bottom: 3px;
-  right: 3px;
-  width: 45px;
-  height: 45px;
+  bottom: 5px;
+  right: 5px;
+  width: 42px;
+  height: 42px;
   z-index: 3;
-  background-color: #3d58c4;
   color: #f1f1f1;
-  border: 3px solid #3d58c4;
-  box-shadow: 0 0 10px #3d58c4;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+}
+
+footer #back-to-top:hover {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 42px;
+  height: 42px;
+  z-index: 3;
+  color: #1a1a1a;
+  border-radius: 5px;
 }
 
 footer button:hover {
-  color: #f1f1f1;
+  background-color: #f1f1f1;
+  color: #1a1a1a;
   border: 3px solid #3d58c4;
-  box-shadow: 0 0 10px #3d58c4;
 }
 
 .pagination-container {
@@ -224,6 +243,7 @@ footer button:hover {
 
 .pagination-number:hover,
 .pagination-button:not(.disabled):hover {
+  color: #1a1a1a;
   background: #fff;
 }
 
