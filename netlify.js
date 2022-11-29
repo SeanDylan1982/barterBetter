@@ -1,6 +1,10 @@
 // Open the modal
-netlifyIdentity.open();
+const loginBtn = document.getElementById('login');
 
+function openLogin () {
+  netlifyIdentity.open();
+}
+loginBtn.addEventListener("click", openLogin);
 // Get the current user:
 // Available after on('init') is invoked
 const user = netlifyIdentity.currentUser();
